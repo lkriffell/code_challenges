@@ -18,4 +18,30 @@ def jump(nums)
   end
 end
 
+jumps = jump([2,3,1,1,4])
+if jumps == 2
+  puts "1. pass - #{jumps}"
+else
+  puts "1. fail - #{jumps}"
+end
 
+jumps = jump([1,5,3,2,8])
+if jumps == 2
+  puts "2. pass - #{jumps}"
+else
+  puts "2. fail - #{jumps}"
+end
+
+jumps = jump([1,1,1,1,1])
+if jumps == 4
+  puts "3. pass - #{jumps}"
+else
+  puts "3. fail - #{jumps}"
+end
+
+jumps = jump([5,1,7,1,1,1,1,1,1,4,4,4,1,1,1,4])
+if jumps == 4
+  puts "4. pass - #{jumps}"
+else
+  puts "4. fail - #{jumps}"
+end
