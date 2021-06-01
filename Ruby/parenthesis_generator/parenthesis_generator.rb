@@ -28,3 +28,27 @@ def valid?(combo)
   end
   return true if opened_parens == 0
 end
+
+if generate_parenthesis(1).sort == ['()'].sort
+  p 'Pass'
+else
+  p 'Fail'
+end
+
+if generate_parenthesis(2).sort == ["(())","()()"].sort
+  p 'Pass'
+else
+  p 'Fail'
+end
+
+if generate_parenthesis(3).sort == ["((()))","(()())","(())()","()(())","()()()"].sort
+  p 'Pass'
+else
+  p 'Fail'
+end
+
+if generate_parenthesis(4).sort == ["(((())))","((()()))","((())())","((()))()","(()(()))","(()()())","(()())()","(())(())","(())()()","()((()))","()(()())","()(())()","()()(())","()()()()"].sort
+  p 'Pass'
+else
+  p 'Fail'
+end
