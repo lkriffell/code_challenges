@@ -25,3 +25,21 @@ def divide(dividend, divisor)
       return answer
   end
 end
+
+if divide(5, 2) == 2
+  p '1: pass'
+else
+  p '1: fail'
+end
+
+if divide(150, 5) == 30
+  p '2: pass'
+else
+  p '2: fail'
+end
+
+if divide(23847, 3) == 7949
+  p '3: pass'
+else
+  p '3: fail'
+end
